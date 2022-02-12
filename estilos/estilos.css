@@ -1,0 +1,369 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.texto-encima{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  position: relative
+  
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+
+.nav{
+  display: none !important;
+}
+.flex-container{
+  display: block !important;
+}
+
+.flex-container {
+  flex-direction: column;
+  
+}
+
+
+
+.flex-container ul li{
+  border:1px solid white;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+
+}
+.flex-container ul li:hover{
+  background-color: black;
+  
+ 
+  
+}
+
+.flex-container ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+p{
+    margin-bottom: 20px;
+}
+header {
+    background-color: #1d1d1fe5;
+    font-size: 17px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+.nav {   
+    float:left; /* Desplazamos el nav hacia la izquierda */
+  }
+.nav ul {
+    list-style: none;
+    overflow: hidden; /* Limpiamos errores de float */
+  }
+.nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+.nav ul li a {
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+.nav ul li:hover {
+    color: rgb(156, 155, 155);
+  }
+
+  .contenido{
+      padding-top: 300px;
+  }
+  .contenido h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: helvetica;
+  }
+  .contenido p{
+    text-align: center;
+    font-size: 25px;
+    font-family: arial;
+    margin-top: 20px;
+  }
+  .contenido-iphone{
+    width: auto;
+    height: 400px;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+  } 
+  .contenido-iphone > .crop {
+    position:absolute;
+    left: -100%;
+    right: -100%;
+    top: 200%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+    
+  }
+  .contenido-iphone img{
+    width: 400px;
+  }
+
+  
+
+
+  @media (min-width: 768px) { /* Tablets en horizonal y escritorios normales */
+ 
+  
+  .nav{
+    display: none !important;
+  }
+  .flex-container{
+    display: block !important;
+  }
+  
+  .contenido{
+    padding-top: 300px;
+}
+.contenido h1{
+  text-align: center;
+  font-size: 50px;
+  font-family: helvetica;
+}
+.contenido p{
+  text-align: center;
+  font-size: 25px;
+  font-family: arial;
+  margin-top: 20px;
+}
+  .contenido-iphone{
+    width: auto;
+    height: 400px;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+  } 
+  .contenido-iphone > .crop {
+    position:absolute;
+    left: -100%;
+    right: -100%;
+    top: 200%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+    
+  }
+
+}
+  @media (min-width: 1200px) { 
+    .nav{
+      display: block !important;
+    }
+    .flex-container{
+      display: none !important;
+    }
+
+    .contenido-iphone{
+      width: auto;
+      height: 400px;
+      overflow: hidden;
+      margin: 10px;
+      position: relative;
+    } 
+    .contenido-iphone > .crop {
+      position:absolute;
+      left: -100%;
+      right: -100%;
+      top: 200%;
+      bottom: -100%;
+      margin: auto;
+      min-height: 100%;
+      min-width: 100%;
+      
+    }
+
+  }
+     
+  @media (min-width: 1024px) { /* Esccritores muy anchos */
+
+  .nav{
+    display: block !important;
+  }
+  .flex-container{
+    display: none !important;
+  }
+}
+  @media (min-width: 1200px) { 
+    .nav{
+      display: block !important;
+    }
+    .flex-container{
+      display: none !important;
+    }
+
+    .contenido{
+      padding-top: 500px;
+  
+}
+  .contenido h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: helvetica;
+  }
+  .contenido p{
+    text-align: center;
+    font-size: 25px;
+    font-family: arial;
+    margin-top: 20px;
+  }
+
+    .contenido-iphone{
+      width: auto;
+      height: 400px;
+      overflow: hidden;
+      margin: 10px;
+      position: relative;
+    } 
+    .contenido-iphone > .crop {
+      position:absolute;
+      left: -100%;
+      right: -100%;
+      top: 5%;
+      bottom: -100%;
+      margin: auto;
+      min-height: 100%;
+      min-width: 100%;
+      
+    }
+    .contenido-iphone imga{
+      margin-top: 50px;
+    }
+    
+p{
+  margin-bottom: 20px;
+}
+header {
+  background-color: #1d1d1fe5;
+  font-size: 17px;
+  line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+nav {   
+  float: left; /* Desplazamos el nav hacia la izquierda */
+}
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  color: rgb(156, 155, 155);
+}
+
+.contenido{
+    padding-top: 100px;
+}
+.contenido-iphone h1{
+  text-align: center;
+  font-size: 50px;
+  font-family: helvetica;
+}
+.contenido-iphone p{
+  text-align: center;
+  font-size: 25px;
+  font-family: arial;
+  margin-top: 20px;
+}
+.contenido-iphone a{
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 29.001px;
+  letter-spacing: 0.231px;
+  text-align: center;
+  color: #0066cc;
+  font-family: helvetica;
+  
+
+}
+
+
+  
+
+.contenido-iphone{
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+}
+.contenido-iphone > .crop {
+  position:absolute;
+  left: -100%;
+  right: -100%;
+  top: 380%;
+  bottom: -100%;
+  margin: auto;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+}
+
+
+}
